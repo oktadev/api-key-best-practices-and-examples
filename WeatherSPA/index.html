@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Weather</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <script src="control.js" defer></script>
+    </head>
+    <body>
+        <h1 id="name">Weather</h1>
+        <div class="centred">
+            <img id="icon" src=""/>
+            <p id="weathermain"></p>
+            <form id="weatherForm">
+                <label for="location">Location</label>
+                <select id="location" name="location">
+                    <option value="berlin,de">Berlin, Germany</option>
+                    <option value="chicago,us">Chicago, USA</option>
+                    <option value="paris,fr">Paris, France</option>
+                </select>
+                <input type="button" value="Get Weather" onclick="onlocation()"/>
+            </form>
+        </div>
+    </body>
+</html>
